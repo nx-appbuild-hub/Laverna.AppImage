@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Office;TextTools;
+Comment=Keep your notes private
+Exec=AppRun %U
+Icon=laverna
+Name=Laverna
+StartupNotify=true
+StartupWMClass=laverna
+Terminal=false
+Type=Application
+X-MultipleArgs=false
+X-KDE-Protocols=laverna
