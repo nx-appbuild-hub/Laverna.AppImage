@@ -9,7 +9,7 @@ all:
 
 	rm -rf ./buiuld
 	mkdir -p ./build
-	unzip $(DESTINATION) -d ./build
+	unzip -o $(DESTINATION) -d ./build
 	rm -rf AppDir/application
 	
 	mkdir --parents AppDir/application
