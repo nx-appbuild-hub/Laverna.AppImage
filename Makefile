@@ -7,6 +7,7 @@ all:
 	echo "Building: $(OUTPUT)"
 	wget --output-document=$(DESTINATION) --continue $(SOURCE)
 
+	rm -rf ./buiuld
 	mkdir -p ./build
 	unzip $(DESTINATION) -d ./build
 	rm -rf AppDir/application
@@ -21,4 +22,4 @@ all:
 
 	rm -f $(DESTINATION)
 	rm -rf AppDir/application
-	rm -rf buiuld
+	rm -rf ./buiuld
