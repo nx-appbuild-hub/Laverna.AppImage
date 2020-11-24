@@ -30,9 +30,6 @@ all: clean
 	wget --output-document=$(PWD)/build/build.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/pango-1.42.4-4.el7_7.x86_64.rpm
 	cd $(PWD)/build && rpm2cpio $(PWD)/build/build.rpm | cpio -idmv && cd ..
 
-
-
-
 	cp --force --recursive $(PWD)/build/usr/* $(PWD)/build/AppDir/
 	cp --force --recursive $(PWD)/AppDir/* $(PWD)/build/AppDir
 
